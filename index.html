@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="javascript/text-animation.js">
+    <title>InfoMech - Home</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">InfoMech</h2>
+    </header>
+    <div class="main-bar">
+    <nav>
+            <ul>
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="pagina_2/index2.html" class="pagdig">DigComp 2.1</a></li> 
+                <li><a href="quiz/index3.html" class="pag">Quiz</a></li>
+                <!--<li><a href="pagina_4/index4.html" class="pag">Pagina 4</a></li>
+                <li><a href="pagina_5/index5.html" class="pag">Pagina 5</a></li>-->
+            </ul>
+        </nav>
+    </div>
+    <section class="banner-body">
+    <img src="image/background.jpg" alt="Sfondo" class="image1">
+    <div class="content">
+        <h2 class="title-main">Cosa Puoi Trovare Sul Sito</h2>
+        <div id="text-animation"></div>
+             <script>
+                var texts = ["Informatica", "DigComp 2.1"];
+                var textAnimation = document.getElementById("text-animation");
+                function startAnimation() {
+                    var currentText = 0;
+                    setInterval(function() {
+                    textAnimation.innerHTML = texts[currentText];
+                    currentText = (currentText + 1) % texts.length;
+                    }, 3000);
+                }
+                startAnimation();
+            </script>
+        <p> Sul sito può trovare tutte le competenze sulle DigComp 2.1
+            ovvero si tratta di un quadro comune di riferimento europeo per
+            le competenze digitali
+        </p>
+        <a href="pagina_2/index2.html" class="btn">Scopri Di Più</a>
+    </div>
+    </section>
+    <section class="box">
+        <div class="item1">Il modello DIGCOMP è un quadro comune di riferimento europeo per le competenze digitali.<br><br>
+            <a href="pagina_2/index2.html" class="btn2">Dai un occhiata!</a>
+        </div>
+        <div class="item2"><b>DigComp 2.1</b></div>
+    </section>
+    
+    <section class="box2">
+        <div class="item3">Arriveranno Presto Nuovi Contenuti!</div>
+        <div class="item4"></div>
+    </section>
+    <footer>
+        <p class="ftext1">© 2023 · InfoMech</p>
+        <div class="ftextg">
+        <p>© 2023 · </p>
+        <p class="ftextg2">Luca Pasquali</p>
+        </div>
+    </footer>
+
+</body>
+</html>
